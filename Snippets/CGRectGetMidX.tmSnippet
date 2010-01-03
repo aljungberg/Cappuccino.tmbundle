@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>CGRectGetMidX(${2:[${1:contentView} bounds]})</string>
+	<key>name</key>
+	<string>CGRectGetMidX</string>
+	<key>scope</key>
+	<string>source.js.objj</string>
+	<key>tabTrigger</key>
+	<string>rect</string>
+	<key>uuid</key>
+	<string>C8CC5F78-3B85-4A60-ABEE-021E589ABDD0</string>
+</dict>
+</plist>

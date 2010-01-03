@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>CGRectGetMaxX(${2:[${1:contentView} bounds]})</string>
+	<key>name</key>
+	<string>CGRectGetMaxX</string>
+	<key>scope</key>
+	<string>source.js.objj</string>
+	<key>tabTrigger</key>
+	<string>rect</string>
+	<key>uuid</key>
+	<string>E73E957F-BAC3-48FE-B997-D403EBD4FF5C</string>
+</dict>
+</plist>
