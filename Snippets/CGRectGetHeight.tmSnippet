@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>(CGRectGetHeight([${1:contentView} bounds]) - ${2:100.0})</string>
+	<string>CGRectGetHeight(${2:[${1:contentView} bounds]})</string>
 	<key>name</key>
 	<string>CGRectGetHeight</string>
 	<key>scope</key>
