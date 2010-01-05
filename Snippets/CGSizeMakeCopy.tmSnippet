@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>CGSizeMakeCopy(${1:aSize})</string>
+	<key>name</key>
+	<string>CGSizeMakeCopy</string>
+	<key>scope</key>
+	<string>source.js.objj</string>
+	<key>tabTrigger</key>
+	<string>size</string>
+	<key>uuid</key>
+	<string>50A0F5DB-F14C-433A-9E96-7AE71681BEDE</string>
+</dict>
+</plist>

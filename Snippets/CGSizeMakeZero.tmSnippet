@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>CGSizeMakeZero()</string>
+	<key>name</key>
+	<string>CGSizeMakeZero</string>
+	<key>scope</key>
+	<string>source.js.objj</string>
+	<key>tabTrigger</key>
+	<string>size</string>
+	<key>uuid</key>
+	<string>FD0F195D-C70C-4701-94E4-9FC1294E4991</string>
+</dict>
+</plist>
