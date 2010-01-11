@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>[[CPNotificationCenter defaultCenter] removeObserver:${1:self}];</string>
+	<key>name</key>
+	<string>removeObserver</string>
+	<key>scope</key>
+	<string>source.js.objj</string>
+	<key>tabTrigger</key>
+	<string>observe</string>
+	<key>uuid</key>
+	<string>DBC797E5-7187-41D4-807A-ADF9399B2F10</string>
+</dict>
+</plist>

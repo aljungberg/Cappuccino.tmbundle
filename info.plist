@@ -32,10 +32,26 @@
 				<key>name</key>
 				<string>Colors</string>
 			</dict>
+			<key>1128CC32-B61E-46BE-933D-906895A7D278</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>295AEC95-0900-4D1F-B322-37D56E735C5C</string>
+					<string>DBC797E5-7187-41D4-807A-ADF9399B2F10</string>
+					<string>F07E1389-6783-4445-B8F1-A1BDBC105393</string>
+					<string>ADED91EB-F981-447D-8226-D5091FB8FDA1</string>
+					<string>271A1A2B-FA32-4FCB-8AD6-488173191C02</string>
+					<string>7C91AC67-C47E-46C2-8DC3-EC0FBB019CEE</string>
+				</array>
+				<key>name</key>
+				<string>Notifications</string>
+			</dict>
 			<key>24878027-7EC9-484B-9ECB-3030306A03BB</key>
 			<dict>
 				<key>items</key>
-				<array/>
+				<array>
+					<string>1128CC32-B61E-46BE-933D-906895A7D278</string>
+				</array>
 				<key>name</key>
 				<string>Foundation</string>
 			</dict>
@@ -204,6 +220,12 @@
 		<string>9BABD784-3DBE-4DA3-8A70-4E32FC7FDBB8</string>
 		<string>0B77AF3E-D6F4-4201-AFA9-BD6003E5F44B</string>
 		<string>EC56EC3D-E3F8-46A4-BEFD-B8934962B1E9</string>
+		<string>295AEC95-0900-4D1F-B322-37D56E735C5C</string>
+		<string>DBC797E5-7187-41D4-807A-ADF9399B2F10</string>
+		<string>F07E1389-6783-4445-B8F1-A1BDBC105393</string>
+		<string>ADED91EB-F981-447D-8226-D5091FB8FDA1</string>
+		<string>271A1A2B-FA32-4FCB-8AD6-488173191C02</string>
+		<string>7C91AC67-C47E-46C2-8DC3-EC0FBB019CEE</string>
 	</array>
 	<key>uuid</key>
 	<string>DB312A5F-F277-4C72-A6F7-39C9FBF6CC75</string>
