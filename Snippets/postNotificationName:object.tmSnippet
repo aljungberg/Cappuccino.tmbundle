@@ -3,14 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>CGRectGetHeight(${2:[${1:contentView} bounds]})</string>
+	<string>[[CPNotificationCenter defaultCenter] postNotificationName:@"${1}"
+                                                    object:${2:nil}];</string>
 	<key>name</key>
-	<string>CGRectGetHeight</string>
+	<string>postNotificationName:object</string>
 	<key>scope</key>
 	<string>source.js.objj</string>
 	<key>tabTrigger</key>
-	<string>rect</string>
+	<string>post</string>
 	<key>uuid</key>
-	<string>06743940-B13B-4D58-ADAB-7739DBC44BA8</string>
+	<string>271A1A2B-FA32-4FCB-8AD6-488173191C02</string>
 </dict>
 </plist>

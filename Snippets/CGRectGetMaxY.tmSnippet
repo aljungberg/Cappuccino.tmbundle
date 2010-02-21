@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>CGRectGetHeight(${2:[${1:contentView} bounds]})</string>
+	<string>CGRectGetMaxY(${2:[${1:contentView} bounds]})</string>
 	<key>name</key>
-	<string>CGRectGetHeight</string>
+	<string>CGRectGetMaxY</string>
 	<key>scope</key>
 	<string>source.js.objj</string>
 	<key>tabTrigger</key>
 	<string>rect</string>
 	<key>uuid</key>
-	<string>06743940-B13B-4D58-ADAB-7739DBC44BA8</string>
+	<string>51896368-A0D6-427F-98B1-E3232A9027B3</string>
 </dict>
 </plist>

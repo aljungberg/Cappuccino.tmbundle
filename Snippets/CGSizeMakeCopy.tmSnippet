@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>CGRectGetHeight(${2:[${1:contentView} bounds]})</string>
+	<string>CGSizeMakeCopy(${1:aSize})</string>
 	<key>name</key>
-	<string>CGRectGetHeight</string>
+	<string>CGSizeMakeCopy</string>
 	<key>scope</key>
 	<string>source.js.objj</string>
 	<key>tabTrigger</key>
-	<string>rect</string>
+	<string>size</string>
 	<key>uuid</key>
-	<string>06743940-B13B-4D58-ADAB-7739DBC44BA8</string>
+	<string>50A0F5DB-F14C-433A-9E96-7AE71681BEDE</string>
 </dict>
 </plist>

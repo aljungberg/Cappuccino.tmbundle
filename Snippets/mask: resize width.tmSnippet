@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>CGRectGetHeight(${2:[${1:contentView} bounds]})</string>
+	<string>[${1:object} setAutoresizingMask:CPViewWidthSizable];</string>
 	<key>name</key>
-	<string>CGRectGetHeight</string>
-	<key>scope</key>
-	<string>source.js.objj</string>
+	<string>mask: resize width</string>
 	<key>tabTrigger</key>
-	<string>rect</string>
+	<string>mw</string>
 	<key>uuid</key>
-	<string>06743940-B13B-4D58-ADAB-7739DBC44BA8</string>
+	<string>5967AFFD-F0B2-43B7-8DF3-1F689459E7CF</string>
 </dict>
 </plist>
