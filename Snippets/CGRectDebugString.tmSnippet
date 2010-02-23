@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>"origin.x: "+${1:aRect}.origin.x+" origin.y: "+${1:aRect}.origin.y+" size.width: "+${1:aRect}.size.width+" size.height: "+${1:aRect}.size.height+" "</string>
+	<key>name</key>
+	<string>CGRectDebugString</string>
+	<key>scope</key>
+	<string>source.js.objj</string>
+	<key>tabTrigger</key>
+	<string>rect</string>
+	<key>uuid</key>
+	<string>B1E984E7-8363-4D31-AA16-71E8DE66EF57</string>
+</dict>
+</plist>
