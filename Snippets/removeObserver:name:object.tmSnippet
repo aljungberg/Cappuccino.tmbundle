@@ -7,7 +7,7 @@
                                                 name:${2}
                                               object:${3}];</string>
 	<key>name</key>
-	<string>removeObserver:name:object</string>
+	<string>CPNotificationCenter removeObserver:name:object</string>
 	<key>scope</key>
 	<string>source.js.objj</string>
 	<key>tabTrigger</key>

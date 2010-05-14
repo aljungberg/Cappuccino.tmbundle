@@ -6,7 +6,7 @@ require bundle_path  + '/lib/dialog1.rb'
 
 class Autocomplete
   attr_reader :empty, :brackets, :classes, :file_name, :previous_line, :choices
-  
+
   def initialize(current_word)
     case current_word
     when /\[\]/ : current_word = current_word.gsub(' ','').gsub(';','')
@@ -14,21 +14,21 @@ class Autocomplete
     when nil : current_word = nil
     else current_word = current_word.gsub(' ','').gsub('[','').gsub(']','').gsub(';','')
     end
-    
+
     files = Dir["#{ENV['TM_DIRECTORY']}/**/*.j"] + Dir["#{ENV['TM_BUNDLE_SUPPORT']}/source/**/*.j"]
     data = $stdin.read
-    
+
     @empty, @brackets = false
     @classes = []
-    
+
     previous_line = ENV['TM_LINE_NUMBER'].to_i - 2
     @previous_line = previous_line
     files.each { |file| @classes << file.split('/').last[0..-3] }
     classes_for_regex = @classes.join('|')
-    
+
     setup(current_word, classes_for_regex, data)
     nib = ENV['TM_BUNDLE_SUPPORT'] + '/nib/Completion.nib'
-    
+
     if !(@brackets == true || current_word == '')
       if current_word == nil
         if @previous_line.gsub(' ','').size > 0
@@ -52,7 +52,7 @@ class Autocomplete
       end
     end
   end
-  
+
   def setup(current_word, classes_for_regex, data)
     if @classes.include?(current_word)
       custom = Dir["#{ENV['TM_DIRECTORY']}/**/*.j"].find {|a| a.include?(current_word+'.j') }.nil? ? false : true
@@ -70,7 +70,7 @@ class Autocomplete
       else
         lines_matching_regex = []
         data.each_line { |line| lines_matching_regex << line if line =~ (/\s+(#{current_word}\s+=)|(#{current_word}=)/) }
-        
+
         if lines_matching_regex.size == 1
           current_word = lines_matching_regex.first.scan(/(#{classes_for_regex})/).to_s
           support_files = Dir["#{ENV['TM_BUNDLE_SUPPORT']}/source/**/*.j"]
@@ -83,7 +83,7 @@ class Autocomplete
       end
     end
   end
-  
+
   def show_dialog(nib,choices)
     TextMate::UI.dialog1(:nib => nib, :parameters => choices,
       :options => {:center => true, :modal => true}) do |results|
@@ -94,7 +94,7 @@ class Autocomplete
       end
     end
   end
-  
+
   def create_choices(file_name, type='klass')
     begin
       lines_matching_regex = []
@@ -114,11 +114,11 @@ class Autocomplete
             end
           end
         end
-        
+
         add_methods_to_hash(lines_matching_regex, className)
         clean_array = @choices['completionArray'].reverse.inject({}) do |hash,item|
            hash[item['display']]||=item
-           hash 
+           hash
         end.values
         @choices = {'completionArray' => clean_array.sort_by {|c| c['display'].to_s.downcase } }
       end
@@ -126,7 +126,7 @@ class Autocomplete
       @choices = nil
     end
   end
-  
+
   def add_parent_methods(line, type)
     lines_matching_regex = []
     match = line.scan(/.*?@implementation.*?:\s*(\w+).*/m)
@@ -155,7 +155,7 @@ class Autocomplete
       end
     end
   end
-  
+
   def add_methods_to_hash(lines, className)
     lines.flatten!.each do |line|
       @choices['completionArray'] << {

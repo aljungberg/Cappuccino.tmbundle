@@ -3,14 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>[[CPNotificationCenter defaultCenter] removeObserver:${1:self}];</string>
+	<string>- (void)observeValueForKeyPath:keyPath
+    ofObject:anActivity
+    change:change
+    context:context
+{
+	$0
+}
+</string>
 	<key>name</key>
-	<string>CPNotificationCenter removeObserver</string>
+	<string>CPObject observe</string>
 	<key>scope</key>
 	<string>source.js.objj</string>
 	<key>tabTrigger</key>
 	<string>observe</string>
 	<key>uuid</key>
-	<string>DBC797E5-7187-41D4-807A-ADF9399B2F10</string>
+	<string>E8391DCA-E565-4905-A8EE-308FAA17B822</string>
 </dict>
 </plist>
