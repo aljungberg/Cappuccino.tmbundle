@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@import &lt;${3:Foundation}/${2}.j&gt;
-
-@implementation ${1:${TM_FILENAME/(.*).j/$1/}} : ${2:CPObject}
+	<string>@interface ${1:${TM_FILENAME/\...*$|(^$)/(?1:object)/}} : ${2:CPObject}
 {
 }
 
@@ -18,8 +16,7 @@
 	return self;
 }
 
-@end
-</string>
+@end</string>
 	<key>name</key>
 	<string>class</string>
 	<key>scope</key>
